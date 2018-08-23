@@ -1,0 +1,39 @@
+    1  sudo apt -get update
+    2  sudo apt - get update
+    3  sudo apt- get update
+    4  sudo apt get update
+    5  sudo apt update
+    6  sudo apt upgrade
+    7  reboot 0
+    8  sudo reboot 
+    9  sudo apt install git
+   10  gcc -v
+   11  sudo apt install gcc
+   12  gcc -v
+   13  sudo apt install gedit
+   14  geditr
+   15  gedit
+   16  cd home
+   17  ls
+   18  cd documents
+   19  cd document
+   20  cd Документы
+   21  cd progrma
+   22  cd program
+   23  gedit helloworld.c 
+   24  gcc helloworld.c 
+   25  gedit helloworld.c 
+   26  gcc helloworld.c > out.txt
+   27  gcc helloworld.c -o test.sh
+   28  ./test.sh
+   29  ./a.out
+   30  gedit helloworld.c 
+   31  gcc helloworld.c
+   32  ls
+   33  ./a.out 
+   34  shutdown 0
+   35  gcc -v
+   36  exit
+   37  ls /usr/bin | grep "gcc" | sort -r | cat > out.txt
+   38  gedit out.txt
+   39  history > history.txt
