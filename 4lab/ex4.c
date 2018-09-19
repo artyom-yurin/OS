@@ -3,9 +3,8 @@
 #include <string.h>
 #include <unistd.h>
 
-int main()
+int main(int argc, char* argv[])
 {
-	fork();
 	if(!system(NULL)) 
 	{
 		return 1;
@@ -21,6 +20,6 @@ int main()
 		{
 			return 0;	
 		}
-		system(command);
+		execv(command, argv);
 	}
 }
