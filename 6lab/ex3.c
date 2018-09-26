@@ -5,7 +5,7 @@ int isTerminate = 0;
 
 void myHandler()
 {
-  printf("\nhttps://www.youtube.com/watch?v=70O0FsJw5lo\n");
+  printf("\nTerminate program\n");
   isTerminate = 1;
 }
 

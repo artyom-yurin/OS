@@ -6,8 +6,6 @@
 void terminateHandler()
 {
   printf("Child was killed by parent\n");
-  printf("As like Andrew by Taras Bulba\n");
-  printf("Thanx Gogol for first book about signals in OS\n");
   exit(0);
 }
 
