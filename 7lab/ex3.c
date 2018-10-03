@@ -37,6 +37,7 @@ int main(){
   if(n2 < 1)
   {
     printf("Size can't be 0 or negative\n");
+    free(a1);
     return 1;
   }
 
