@@ -10,13 +10,14 @@ void* myRealloc(void* ptr, size_t newSize)
   {
     return malloc(newSize);
   }
+
   if(!newSize)
   {
     free(ptr);
     return NULL;
   }
 
-  void* newPtr = malloc(newSize * sizeof(ptr[0]));
+  void* newPtr = malloc(newSize);
   if(newPtr == NULL)
   {
     printf("Can't allocate memory\n");
@@ -68,15 +69,17 @@ int main()
 
   if(n2 < 0)
   {
-    printf("Size can't negative\n");
+    printf("Size can't be negative\n");
     free(a1);
     return 1;
   }
 
 	//Dynamically change the array to size n2
-	a1 = (int*)myRealloc((void*)a1, n2);
+	a1 = (int*)myRealloc((void*)a1, n2 * sizeof(int));
+
   if(a1 == NULL)
   {
+    printf("Array was deallocated\n");
     return 0;
   }
 	//If the new array is a larger size, set all new members to 0. Reason: dont want to use uninitialized variables.

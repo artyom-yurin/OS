@@ -30,19 +30,25 @@ int main(){
 	}
 
 	//User specifies the new array size, stored in variable n2.
-	printf("\nEnter new array size: ");
+  printf("\nEnter new array size: ");
 	int n2=0;
 	scanf("%d",&n2);
 
-  if(n2 < 1)
+  if(n2 < 0)
   {
-    printf("Size can't be 0 or negative\n");
+    printf("Size can't be negative\n");
     free(a1);
     return 1;
   }
 
 	//Dynamically change the array to size n2
-	a1 = realloc((void*)a1, n2);
+	a1 = (int*)realloc((void*)a1, n2 * sizeof(int));
+
+  if(a1 == NULL)
+  {
+    printf("Array was deallocated\n");
+    return 0;
+  }
 
 	//If the new array is a larger size, set all new members to 0. Reason: dont want to use uninitialized variables.
 
