@@ -68,7 +68,7 @@ int main()
 
   if(n2 < 0)
   {
-    printf("Size can't be 0 or negative\n");
+    printf("Size can't negative\n");
     free(a1);
     return 1;
   }
