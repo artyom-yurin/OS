@@ -1,0 +1,3 @@
+A virtual memory is a abstraction for illusion infinite memory, but it have a reference to a physical memory.
+A physical memory exists on chips and storage devices(RAM, hard disk)
+Virtual > physical
