@@ -1,0 +1,11 @@
+123412341234
+with number of page frame 3
+123 - 3 miss
+423 - 1 miss
+413 - 1 miss
+412 - 1 miss
+312 - 1 miss
+342 - 1 miss
+hit/miss = 0
+
+I take count of pages more than number of page frame. It causes 100% page fault.
