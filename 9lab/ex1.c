@@ -25,9 +25,9 @@ void calculateRatio(const char* file_name, int numberPageFrame)
   int miss = 0;
 
   int printShit = 0;
+  fscanf (file, "%d", &number);
   while(!feof(file))
   {
-     fscanf (file, "%d", &number);
      int isPresent = 1;
      int findIndex = -1;
      int minValueIndex = -1;
@@ -73,9 +73,9 @@ void calculateRatio(const char* file_name, int numberPageFrame)
        }
        again[minValueIndex] = again[minValueIndex] | 0x80;
      }
-
+     fscanf (file, "%d", &number);
   }
-  printf("For %d number of pages hit/miss ratio: %f\n", numberPageFrame, ((float)hit)/miss);
+  printf("For %d number of pages hit/miss ratio is %d/%d\n", numberPageFrame, hit, miss);
   fclose(file);
 }
 
@@ -84,5 +84,6 @@ int main()
   calculateRatio("Lab 09 input.txt", 10);
   calculateRatio("Lab 09 input.txt", 50);
   calculateRatio("Lab 09 input.txt", 100);
+  calculateRatio("Lab 09 input.txt", 1000);
   return 0;
 }
