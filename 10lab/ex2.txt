@@ -1,0 +1,2 @@
+../1lab/file.txt
+../10lab/_ex2.txt
