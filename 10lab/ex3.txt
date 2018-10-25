@@ -1,0 +1,8 @@
+-rw-rw-r-- 1 artem artem 0 окт 25 21:39 _ex3.txt
+-rw-rw-rw- 1 artem artem 0 окт 25 21:39 _ex3.txt
+-rwxrw-rwx 1 artem artem 0 окт 25 21:39 _ex3.txt
+-rwxrwxrwx 1 artem artem 0 окт 25 21:39 _ex3.txt
+
+660 - owner and group have rw  others cant access to file
+775 - owner and group have rwx others have r-x
+777 - all have rwx
