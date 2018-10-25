@@ -1,0 +1,8 @@
+Founded linkes for "file1":
+file1 link1 
+Founded linkes for ".":
+. 
+Founded linkes for "..":
+.. 
+Founded linkes for "link1":
+file1 link1 
