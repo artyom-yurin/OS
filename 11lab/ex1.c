@@ -21,7 +21,5 @@ int main()
     return 1;
   }
   memcpy(out, "This is a nice day", bufstat.st_size);
-
-  close(f);
   return 0;
 }
