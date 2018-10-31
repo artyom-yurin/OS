@@ -1,0 +1,15 @@
+1 case:
+print Hello
+fork
+first process print \n
+second process print \n
+
+2 case:
+print Hello\n
+fork
+first process print \n
+second process print \n
+
+difference in output
+in first case we have two end of line
+in second case we have three end of line
