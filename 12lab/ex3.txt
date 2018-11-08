@@ -1,0 +1,5 @@
+With or without SYNC
+more buffer size - faster
+less buffer size - slower
+
+With SYNC big amount of data will be copied longer,but it's can be resoled if we set a big buffer size
